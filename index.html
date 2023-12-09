@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indesit</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class='header' id="header">
+            <div class='header__container'>
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="logo" class="header__logo_img">
+                </a>
+                <div class="header__active active">
+                    <div class="header__locate active__item">
+                        <img src="./img/icons/locate.svg" alt="locate" class="active__icon">
+                        <form class="active__form" id="locate-form">
+                            <label class="active__info">Ваш город:</label>                     
+                            <select class="locate__list">
+                                <option>Алматы</option>
+                                <option>Нур-Султан</option>
+                                <option>Актобе</option>
+                                <option>Туркестан</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="header__time active__item">
+                        <img src="./img/icons/time.svg" alt="time" class="active__icon">
+                        <form class="active__form" id="time-form">
+                            <label class="active__info">Время работы:</label>
+                            <p class="active__info active__time">с 9:30 до 18:00 Пн-Пт</p>
+                        </form>
+                    </div>
+                    <div class="header__call active__item">
+                        <img src="./img/icons/call.svg" alt="call" class="active__icon">
+                        <form class="active__form" id="time-form">
+                            <a href="tel:+78632036048" class="active__info">+7(863) 203 60 48</a>
+                            <a href="tel:+78632037033" class="active__info">+7(863) 203 70 33</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="header__callorder callorder" id="btn1">
+                    <button class="callorder__item" id="callorder">
+                        <p class="txt">Заказать звонок</p>
+                    </button>
+                </div>
+                <div class="callorder__window">
+                    <form class="window__box">
+                        <img src="./img/icons/close-icon.png" alt="" class="window-close">
+                        <h3 class="window__title title">Заказать звонок</h3>
+                        <div class="window__form">
+                            <label for="number" class="form__title">Номер телефона:</label>
+                            <input type="text" class="form__input" placeholder="Напиши свой номер телефона">
+                            <label for="email" class="form__title">Логин почты:</label>
+                            <input type="email" class="form__input" placeholder="example@gmail.com">
+                        </div>
+                        <div class="active__form" id="locate-form">
+                            <label class="active__info">Ваш город:</label>                     
+                            <select class="locate__list">
+                                <option>Алматы</option>
+                                <option>Нур-Султан</option>
+                                <option>Актобе</option>
+                                <option>Туркестан</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="window__order">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class='main'>
+            <section class="main__hero">
+                <div class="hero__container">
+                    <div class="hero__article">
+                        <div class="hero__top">
+                            <div class="hero__title-box">
+                                <h1 class="hero__title title">
+                                    Сервисный центер <span class="blue">INDESIT</span> в Алматы
+                                </h1>
+                                <p class="hero__subtitle">Обходитесь без лишних затрат</p>
+                            </div>
+                            <button class="callorder__item callorder" name="link" id="btn2">
+                                <p class="txt">Вызвать мастера</p>
+                            </button>
+                            <p class="hero__more">
+                                <span class="red">*</span>
+                                Выезд и диагностика бесплатно при условии ремонта</p>    
+                        </div>
+                        <ul class="hero__list">
+                            <div class="hero__list_item">
+                                <h2 class="hero__list_num">0</h2>
+                                <div class="hero__item_article">
+                                    <h4 class="hero__item_title">₸</h4>
+                                    <p class="hero__item_subtitle">диагностика</p>
+                                </div>
+                            </div>
+                            <div class="hero__list_item">
+                                <h2 class="hero__list_num">1</h2>
+                                <div class="hero__item_article">
+                                    <h4 class="hero__item_title">день</h4>
+                                    <p class="hero__item_subtitle">ремонта</p>
+                                </div>
+                            </div>
+                            <div class="hero__list_item">
+                                <h2 class="hero__list_num">3</h2>
+                                <div class="hero__item_article">
+                                    <h4 class="hero__item_title">года</h4>
+                                    <p class="hero__item_subtitle">гарантии</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div> 
+                    <div class="hero__img">
+                        <img src="./img/hero__img.svg" class="hero__image"></img>
+                    </div>
+                </div>
+            </section>
+            <section class="main__fix">
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="fix__decor fix__decor1">
+                <img src="./img/decor/circle-blue.svg" alt="" class="fix__decor fix__decor2">
+                <img src="./img/decor/ring-blue.svg" alt="" class="fix__decor fix__decor3">
+                <img src="./img/decor/circle-spectr.svg" alt="" class="fix__decor fix__decor4">
+                <div class="fix__container">
+                    <h2 class="fix__title title">Ремонт любых побутовой техники INDESIT</h2>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <a class="cardlist__card cardlist__head">
+                                <img src="./img/cardlist-el1.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Ремонт стиральных машин
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a class="cardlist__card">
+                                <img src="./img/cardlist-el2.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Вытяжки
+                                </h4>
+                            </a>
+                            <a class="cardlist__card">
+                                <img src="./img/cardlist-el3.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Пылесосы
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a class="cardlist__card">
+                                <img src="./img/cardlist-el4.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Посудомойки
+                                </h4>
+                            </a>
+                            <a class="cardlist__card">
+                                <img src="./img/cardlist-el5.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Варочные панели
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a class="cardlist__card cardlist__head">
+                                <img src="./img/cardlist-el1.svg" alt="washing machine" class="cardlist__img">
+                                <h4 class="cardlist__title">
+                                    Ремонт стиральных машин
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fix__callorder callorder" id="btn3">
+                        <div class="fix__subtitle">
+                            <h3 class="fix__title-bottom">Не нашли свой продукт в списке, или остались вопросы?</h3>
+                            <p class="fix__subtitle-bottom">
+                                Свяжитесь с менеджером по телефону <a href="tel:+77780651246" class="tel">+7 (778) 065-12-46</a>
+                            </p>
+                        </div>
+                        <button class="callorder__item" id="callorder">
+                            <p class="txt">Заказать звонок</p>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="main__order">
+                <div class="order__container">
+                    <div class="order__card">
+                        <div class="order__article">
+                            <h2 class="order__title title">Заказать бесплатный выезд мастера за 30 мин!</h2>
+                            <p class="order__paragraph">
+                                Выезд мастера и диагностика бесплатно, при условии ремонта, 
+                                Мы следим за качеством облуживания.
+                                К вам приедет мастер с опытом 
+                                работы не менее пяти лет.
+                                У нас быстро, от 30 минут выезд мастера.
+                            </p>
+                            <a href="#" class="callorder__item" id="btn4">
+                                <p class="txt">Заказать звонок</p>
+                            </a>
+                        </div>
+                        <div class="order__image">
+                            <img src="./img/some-items.svg" alt="" class="order__img">
+                            <img src="./img/mechanic.svg" alt="" class="order__img-hero">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/decor/circle-spectr.svg" class="order__decor order__decor1">
+                <img src="./img/decor/arrow-zigzag.svg" class="order__decor order__decor2">
+                <img src="./img/decor/circle-blue.svg" class="order__decor order__decor3">
+                <img src="./img/decor/arrow-zigzag.svg" class="order__decor order__decor4">
+            </section>
+            <section class="main__service">
+                <div class="service__container">
+                    <h2 class="service__title title">
+                        Сервис <span class="red">INDESIT</span> предлагает лучшие цены
+                    </h2>
+                    <div class="service__article">
+                        <div class="service__card">
+                            <h4 class="card__title title">Ремонт микроволновки</h4>
+                            <p class="card__paragraph">
+                                Замена слюды, магнетрона, восстановление кнопок и другое
+                            </p>
+                            <p class="card__price">ОТ 2500 ₸.</p>
+                        </div>
+                        <div class="service__card">
+                            <h4 class="card__title title">Ремонт пылесоса</h4>
+                            <p class="card__paragraph">
+                                Замена или восстановление шланга, схемы управления, двигателя и прочее.
+                            </p>
+                            <p class="card__price">ОТ 4000 ₸.</p>
+                        </div>
+                        <div class="service__card">
+                            <h4 class="card__title title">Ремонт аудиотехники</h4>
+                            <p class="card__paragraph">
+                                Колонки, домашние кинотеатры, музыкальные центры и др. виды.
+                            </p>
+                            <p class="card__price">ОТ 4500 ₸.</p>
+                        </div>
+                        <div class="service__card">
+                            <h4 class="card__title title">Ремонт микроволновки</h4>
+                            <p class="card__paragraph">
+                                Замена слюды, магнетрона, восстановление кнопок и другое
+                            </p>
+                            <p class="card__price">ОТ 2500 ₸.</p>
+                        </div>
+                        <div class="service__card">
+                            <h4 class="card__title title">Ремонт микроволновки</h4>
+                            <p class="card__paragraph">
+                                Замена слюды, магнетрона, восстановление кнопок и другое
+                            </p>
+                            <p class="card__price">ОТ 2500 ₸.</p>
+                        </div>
+                        <div class="service__card service__card-free service__card-free1">
+                            <div class="service__card-left">
+                                <h4 class="card__title title">Выезд мастера</h4>
+                                <p class="card__paragraph">
+                                    В удобное для Вас время. На дом или в офис!
+                                </p>
+                                <p class="card__price">БЕСПЛАТНО</p>
+                            </div>
+                            <img src="./img/main__services/master.png" alt="master" class="service__card-right">
+                        </div>
+                        <div class="service__card service__card-free service__card-free2">
+                            <div class="service__card-left">
+                                <h4 class="card__title title">Диагностика</h4>
+                                <p class="card__paragraph">
+                                    С ипользованием современного оборудования
+                                </p>
+                                <p class="card__price">БЕСПЛАТНО</p>
+                            </div>
+                            <img src="./img/main__services/washing machine.png" alt="master" class="service__card-right">
+                        </div>
+                        <div class="service__card service__card-free service__card-free3">
+                            <div class="service__card-left">
+                                <h4 class="card__title title">Расширенная гарантия</h4>
+                                <p class="card__paragraph">
+                                    На все запчасти и выполненные услуги
+                                </p>
+                                <p class="card__price">БЕСПЛАТНО</p>
+                            </div>
+                            <img src="./img/main__services/garanty.png" alt="master" class="service__card-right">
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="service__decor service__decor1">
+                <img src="./img/decor/half-ring.svg" alt="" class="service__decor service__decor2">
+                <img src="./img/decor/ring-white.svg" alt="" class="service__decor service__decor3">
+                <img src="./img/decor/ring-blue.svg" alt="" class="service__decor service__decor4">
+                <img src="./img/decor/arrow-zigzag-white.svg" alt="" class="service__decor service__decor5">
+                <img src="./img/decor/ring-white.svg" alt="" class="service__decor service__decor6">
+                <img src="./img/decor/circle-spectr.svg" alt="" class="service__decor service__decor7">
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="service__decor service__decor8">
+                <img src="./img/decor/circle-white.svg" alt="" class="service__decor service__decor9">
+                <img src="./img/decor/ring-blue-bold.svg" alt="" class="service__decor service__decor10">
+                <img src="./img/decor/half-ring.svg" alt="" class="service__decor service__decor11">
+                <img src="./img/decor/circle-white.svg" alt="" class="service__decor service__decor12">
+                <img src="./img/decor/Decor__all.svg" alt="" class="service__decor service__decor13">
+                <img src="./img/decor/circle-white.svg" alt="" class="service__decor service__decor14">
+                <img src="./img/decor//ring-white.svg" alt="" class="service__decor service__decor15">
+            </section>
+            <section class="main__plan">
+                <div class="plan__container">
+                    <h2 class="plan__title title">Схема работы</h2>
+                    <div class="plan__article">
+                        <li class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">1 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step1.svg" alt="1 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Консультация
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Персональный менеджер ответит на все ваши вопросы и будет держать вас в курсе всех этапов работ
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">2 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step2.svg" alt="2 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Доставка
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Курьер приедет в течении 1 часа или мы можем принять устройство в сервисе
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">3 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step3.svg" alt="3 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Диагностика
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Осуществим диагностику за счет компании, даже если вы откажетесь от ремонте
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">4 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step4.svg" alt="4 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Согласование
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Персональный менеджер согласует с вами сроки и стоимость ремонта
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">5 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step5.svg" alt="5 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Согласование
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Персональный менеджер согласует с вами сроки и стоимость ремонта
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan__card">
+                            <div class="card__title">
+                                <h3 class="card__title-txt">6 ШАГ</h3>
+                            </div>
+                            <div class="card__body">
+                                <img src="./img/plan__icons/step6.svg" alt="6 step" class="card__icon">
+                                <div class="card__article">
+                                    <h4 class="card__article-title">
+                                        Диагностика
+                                    </h4>
+                                    <p class="card__article-paragraph">
+                                        Оплата производится после ремонта и проверки устройства клиентом
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__discount">
+                <div class="discount__container">
+                    <div class="discount__article">
+                        <h2 class="discount__title title">Получите скидку 15% прямо сейчас!</h2>
+                        <p class="discount__paragraph paragraph">
+                            Вы выбираете LG, а мы в знак благодарности дарим Вам скидку 15% на все виды ремонтных работ в нашем центре!
+                        </p>
+                        <button class="callorder__item" id="btn5">
+                            <p class="txt">Получить скидку 15%</p>
+                        </button>
+                    </div>
+                    <div class="discount__image">
+                        <img src="./img/discount/discount__items.svg" alt="electro-devices" class="discount__img">
+                        <img src="./img/discount/master.svg" alt="master" class="discount__img-hero">
+                    </div>
+                </div>
+
+                <img src="./img/decor/circle-spectr.svg" class="discount__decor discount__decor1"></img>
+                <img src="./img/decor/arrow-zigzag.svg" class="discount__decor discount__decor2"></img>
+                <img src="./img/decor/circle-spectr.svg" class="discount__decor discount__decor3"></img>
+                <img src="./img/decor/ring-white.svg" class="discount__decor discount__decor4"></img>
+                <img src="./img/decor/arrow-zigzag.svg" class="discount__decor discount__decor5"></img>
+                <img src="./img/decor/ring-blue.svg" class="discount__decor discount__decor6"></img>
+            </section>
+            <section class="main__reviews">
+                <div class="reviews__container">
+                    <h2 class="reviews__title title">
+                        Отзывы
+                    </h2>
+                    <ul class="reviews__list">
+                        <li class="reviews__card card__reviews">
+                            <div class="card__avatar">
+                                <img src="./img/reviews/rev1.svg" alt="" class="card__avatar-item">
+                            </div>
+                            <h4 class="card__name">Константин</h4>
+                            <p class="card__article paragraph">
+                                С сайтом и сервисом этой компании всё просто отлично! Качество товара соответствует заявленному. Буду и впреть пользоваться товарами с этого сайта, и смело могу рекомендовать его людям.
+                            </p>
+                        </li>
+                        <li class="reviews__card card__reviews">
+                            <div class="card__avatar">
+                                <img src="./img/reviews/rev2.svg" alt="" class="card__avatar-item">
+                            </div>
+                            <h4 class="card__name">Алина</h4>
+                            <p class="card__article paragraph">
+                                Хочу выразить благодарность компании за качественно выполненную работу по ремонту стиральной машины! Все было качественно и оперативно: от принятия заявки диспетчером до работы мастера! 
+                            </p>
+                        </li>
+                        <li class="reviews__card card__reviews">
+                            <div class="card__avatar">
+                                <img src="./img/reviews/rev3.svg" alt="" class="card__avatar-item">
+                            </div>
+                            <h4 class="card__name">Дмитрий</h4>
+                            <p class="card__article paragraph">
+                                Благодарны за качественное и профессиональное обслуживание, быстро откликнулись. Мастер Сергей приехал в назначенное время, сделал все хорошо
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main__question">
+                <div class="question__container">
+                    <h2 class="question__title title">Ответы и вопросы</h2>
+                    <div class="question__article">
+                        <div class="question__section">
+                            <select name="why" class="question__item">
+                                <option selected label="Как узнать стоимость ремонта?" class="question__text"></option>
+                                <option disabled class="question__answer">Стоимость ремонта узнать очеть просто</option>
+                            </select>
+                            <select name="how__many" class="question__item">
+                                <option selected label="Сколько будет длиться диагностика?" class="question__text"></option>
+                                <option disabled class="question__answer">В зависимости от поломки. В среднем 1-4 дня.</option>
+                            </select>
+                            <select name="why" class="question__item">
+                                <option selected label="Даете ли вы гарантию на ремонт?" class="question__text"></option>
+                                <option disabled class="question__answer">Расширенная гарантия на все запчасти и выполненные услуги БЕСПЛАТНО</option>
+                            </select>
+                        </div>
+                        <div class="question__section question__section-second">
+                            <select name="how__many" class="question__item">
+                                <option selected label="Можно ли вызвать мастера на дом или в офис?" class="question__text"></option>
+                                <option disabled class="question__answer">Да, можно</option>
+                            </select>
+                            <select name="why" class="question__item question__item-big">
+                                <option selected class="question__text"> Не появятся ли новые проблемы после ремонта?
+                                </option>
+                                <option disabled class="question__answer">После ремонта устройства проходят контроль качества выполненной работы по 47 пунктам.</option>
+                                <option disabled class="question__answer">Это означает, что после ремонта вы получите устройство с работоспособностью в 100%.</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="question__decor question__decor1">
+                <img src="./img/decor/circle-spectr.svg" alt="" class="question__decor question__decor2">
+                <img src="./img/decor/ring-blue.svg" alt="" class="question__decor question__decor3">
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="question__decor question__decor4">
+                <img src="./img/decor/ring-white.svg" alt="" class="question__decor question__decor5">
+                <img src="./img/decor/arrow-zigzag.svg" alt="" class="question__decor question__decor6">
+                <img src="./img/decor/ring-blue.svg" alt="" class="question__decor question__decor7">
+                <img src="./img/decor/circle-spectr.svg" alt="" class="question__decor question__decor8">
+            </section>
+            <section class="main__map" id="myMap" >
+                <div class="map__card">
+                    <h2 class="map__title title">Контакты</h2>
+                    <div class="map__form">
+                        <div class="map__locate active__item">
+                            <img src="./img/icons/locate.svg" alt="locate" class="active__icon">
+                            <form class="active__form" id="locate-form">
+                                <label class="active__info">Ваш город:</label>                     
+                                <select class="locate__list">
+                                    <option>Алматы</option>
+                                    <option>Нур-Султан</option>
+                                    <option>Актобе</option>
+                                    <option>Туркестан</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="map__time active__item">
+                            <img src="./img/icons/time.svg" alt="time" class="active__icon">
+                            <form class="active__form" id="time-form">
+                                <label class="active__info">Время работы:</label>
+                                <p class="active__info active__time">с 9:30 до 18:00 Пн-Пт</p>
+                            </form>
+                        </div>
+                        <div class="map__call active__item">
+                            <img src="./img/icons/call.svg" alt="call" class="active__icon">
+                            <form class="active__form" id="time-form">
+                                <a href="tel:+78632036048" class="active__info">+7(863) 203 60 48</a>
+                                <a href="tel:+78632037033" class="active__info">+7(863) 203 70 33</a>
+                            </form>
+                        </div>    
+                    </div>
+                    <button class="callorder__item" id="btn6">
+                        <p class="txt">Заказать звонок</p>
+                    </butt>
+                </div>
+                <div class="map__map" style="width: 100%"><iframe width="100%" height="555" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=555&amp;hl=en&amp;q=%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B,%20A-2+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
+            </section>
+        </main>
+        <footer class='footer'>
+            <div class='footer__container'>
+                <div class="footer__logo">
+                    <img src="./img/logo.svg" alt="logo" class="footer__img">
+                    <p class="footer__paragraph paragraph">
+                        Ремонт бытовой техники в Алматы. <br> Обслуживание по Европейским стандартам качества
+                    </p>
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__paragraph paragraph">
+                        Все права защищены, Алматы 2019
+                    </p>
+                    <a href="#header" class="footer-to-top">
+                        <img src="./img/footer__to-top.svg" class="footer-to-top-img">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>
